@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="싱글벙글 스크린골프회 모임 안내 및 회원 등록" />
+    <title>싱글벙글 스크린골프회</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#home" aria-label="싱글벙글 홈">
+        <span class="brand-ball" aria-hidden="true">⛳</span>
+        <span>싱글벙글</span>
+      </a>
+      <nav aria-label="주요 메뉴">
+        <a href="#schedule">정기모임</a>
+        <a href="#members">회원</a>
+        <a class="nav-cta" href="#join">가입하기</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div>
+          <p class="eyebrow">SCREEN GOLF CLUB</p>
+          <h1>함께 치고,<br /><em>함께 웃어요.</em></h1>
+          <p class="hero-copy">실력은 달라도 즐거움은 함께!<br />편하게 만나 즐기는 스크린골프 동호회입니다.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#join">회원 등록하기</a>
+            <a class="button secondary" href="#attendance">참석 신청</a>
+          </div>
+        </div>
+        <div class="next-meeting" aria-label="다음 정기모임 안내">
+          <span>정기모임</span>
+          <strong>매주 화요일 · 토요일</strong>
+          <p>부담 없이 원하는 시간에 함께하세요.</p>
+        </div>
+      </section>
+
+      <section class="section" id="schedule">
+        <div class="section-heading">
+          <p class="eyebrow">WEEKLY SCHEDULE</p>
+          <h2>정기모임</h2>
+          <p>참가비는 1회 기준입니다.</p>
+        </div>
+        <div class="schedule-grid">
+          <article class="schedule-card featured">
+            <span class="day">화요일</span>
+            <strong>오전 9:30</strong>
+            <p>12,000원</p>
+          </article>
+          <article class="schedule-card">
+            <span class="day">토요일</span>
+            <strong>오전 10:00</strong>
+            <p>16,000원</p>
+          </article>
+          <article class="schedule-card">
+            <span class="day">토요일</span>
+            <strong>오후 1:00</strong>
+            <p>16,000원</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section soft" id="members">
+        <div class="section-heading row-heading">
+          <div>
+            <p class="eyebrow">OUR MEMBERS</p>
+            <h2>싱글벙글 회원</h2>
+          </div>
+          <span class="member-count">10명</span>
+        </div>
+        <div class="member-list" id="memberList"></div>
+      </section>
+
+      <section class="section forms-section">
+        <div class="form-card" id="join">
+          <div class="section-heading">
+            <p class="eyebrow">JOIN US</p>
+            <h2>회원 등록</h2>
+            <p>당근 모임에서 사용하는 닉네임을 정확히 적어주세요.</p>
+          </div>
+          <form id="joinForm">
+            <label>당근 닉네임<input name="carrotNickname" required placeholder="예: 커사맨" /></label>
+            <label>이름<input name="name" required placeholder="실명을 입력하세요" /></label>
+            <label>골프존 닉네임<input name="golfzonNickname" required placeholder="골프존 닉네임" /></label>
+            <label>휴대전화<input name="phone" required inputmode="tel" placeholder="010-0000-0000" pattern="010-[0-9]{4}-[0-9]{4}" /></label>
+            <label>참여 시간
+              <select name="preferredTime" required>
+                <option value="">선택하세요</option>
+                <option>화요일 오전 9:30</option>
+                <option>토요일 오전 10:00</option>
+                <option>토요일 오후 1:00</option>
+                <option>일정에 따라 참여</option>
+              </select>
+            </label>
+            <label class="check"><input name="privacy" type="checkbox" required /><span>회원 명단에 이름, 닉네임과 전화번호가 공개되는 것에 동의합니다.</span></label>
+            <button class="button primary full" type="submit">등록 신청하기</button>
+            <p class="form-message" id="joinMessage" role="status"></p>
+          </form>
+        </div>
+
+        <div class="form-card accent" id="attendance">
+          <div class="section-heading">
+            <p class="eyebrow">THIS WEEK</p>
+            <h2>참석 신청</h2>
+            <p>이번 주 참여할 시간을 알려주세요.</p>
+          </div>
+          <form id="attendanceForm">
+            <label>닉네임<input name="nickname" required placeholder="회원 닉네임" /></label>
+            <label>참석 일정
+              <select name="meeting" required>
+                <option value="">선택하세요</option>
+                <option>화요일 오전 9:30 · 12,000원</option>
+                <option>토요일 오전 10:00 · 16,000원</option>
+                <option>토요일 오후 1:00 · 16,000원</option>
+              </select>
+            </label>
+            <button class="button dark full" type="submit">참석 신청하기</button>
+            <p class="form-message" id="attendanceMessage" role="status"></p>
+          </form>
+          <div class="gift-box">
+            <span>🎁</span>
+            <div><strong>매주 즐거운 이벤트</strong><p>굿샷상 · 발전상 · 행운상</p></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <strong>싱글벙글 스크린골프회</strong>
+      <span>실력은 달라도, 즐거움은 함께!</span>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
