@@ -36,11 +36,3 @@ document.querySelector("#joinForm").addEventListener("submit", (event) => {
   form.reset();
   document.querySelector("#joinMessage").textContent = "등록 신청이 완료되었습니다.";
 });
-
-document.querySelector("#attendanceForm").addEventListener("submit", (event) => {
-  event.preventDefault();
-  const form = event.currentTarget;
-  saveSubmission("singgeul-attendance", Object.fromEntries(new FormData(form)));
-  form.reset();
-  document.querySelector("#attendanceMessage").textContent = "참석 신청이 완료되었습니다.";
-});
