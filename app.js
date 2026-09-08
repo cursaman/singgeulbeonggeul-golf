@@ -9,6 +9,7 @@ const members = [
   { name: "배수경", nickname: "보름달", role: "", phone: "010-2857-3021" },
   { name: "문병식", nickname: "레인제로", role: "", phone: "010-8712-7102" },
   { name: "미입력", nickname: "해피나이스", role: "", phone: "010-9014-3966" },
+  { name: "박현주", nickname: "다온", role: "", phone: "010-9291-3190" },
 ];
 
 const memberList = document.querySelector("#memberList");
