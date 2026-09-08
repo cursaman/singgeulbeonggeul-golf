@@ -23,6 +23,27 @@ memberList.innerHTML = members.map((member) => `
   </article>
 `).join("");
 
+const currentDateTime = document.querySelector("#currentDateTime");
+const dateTimeFormatter = new Intl.DateTimeFormat("ko-KR", {
+  timeZone: "Asia/Seoul",
+  year: "numeric",
+  month: "long",
+  day: "numeric",
+  weekday: "short",
+  hour: "2-digit",
+  minute: "2-digit",
+  hour12: false,
+});
+
+function updateDateTime() {
+  const now = new Date();
+  currentDateTime.dateTime = now.toISOString();
+  currentDateTime.textContent = dateTimeFormatter.format(now);
+}
+
+updateDateTime();
+setInterval(updateDateTime, 30000);
+
 function saveSubmission(key, submission) {
   const saved = JSON.parse(localStorage.getItem(key) || "[]");
   saved.push({ ...submission, submittedAt: new Date().toISOString() });
