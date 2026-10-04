@@ -108,12 +108,12 @@ export default function Home() {
               <div className="field-detail wide prize-detail">
                 <span>대회 상품</span>
                 <div className="prize-list">
-                  <div><span aria-hidden="true">🎁</span><p>롯데상품권<strong>50,000원</strong></p></div>
-                  <div><span aria-hidden="true">💳</span><p>CJ 카드<strong>20,000원</strong></p></div>
-                  <div><span aria-hidden="true">🍠</span><p>고구마 1박스<strong>20,000원 상당</strong></p></div>
+                  <div><span aria-hidden="true">🏆</span><p>최저타 우승<strong>롯데상품권 50,000원</strong></p></div>
+                  <div><span aria-hidden="true">⛳</span><p>최다 파<strong>CJ 카드 20,000원</strong></p></div>
+                  <div><span aria-hidden="true">🍠</span><p>참가자 행운 추첨<strong>고구마 1박스</strong></p></div>
                 </div>
                 <div className="personal-gifts">
-                  <strong>참가자 개인 지급</strong>
+                  <strong>참가자 전원 개인 지급</strong>
                   <span>3피스 골프공 1개</span>
                   <span>포카리 2개</span>
                 </div>
