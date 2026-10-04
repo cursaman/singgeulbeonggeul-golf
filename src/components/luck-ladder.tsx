@@ -68,7 +68,7 @@ export function LuckLadder({ members }: { members: Member[] }) {
     const nextPlayers = shuffle(members.filter((member) => selected.includes(member.phone)));
     setPlayers(nextPlayers);
     setRungs(makeRungs(nextPlayers.length, levels));
-    setResults(shuffle(["🍠 고구마 1박스", ...Array(nextPlayers.length - 1).fill("다음 기회에")]));
+    setResults(shuffle(["🎉 당첨", ...Array(nextPlayers.length - 1).fill("꽝")]));
     setActiveIndex(null);
     setMessage("사다리가 완성됐습니다. 닉네임을 눌러 결과를 확인하세요.");
   }
@@ -137,7 +137,7 @@ export function LuckLadder({ members }: { members: Member[] }) {
           </svg>
           <div className="ladder-results" style={{ gridTemplateColumns: `repeat(${players.length}, 1fr)` }}>
             {results.map((result, index) => (
-              <span className={activeTrace?.column === index ? "revealed" : ""} key={`${result}-${index}`}>
+              <span className={activeTrace?.column === index ? `revealed${result === "🎉 당첨" ? " winning-result" : ""}` : ""} key={`${result}-${index}`}>
                 {activeTrace?.column === index ? result : "?"}
               </span>
             ))}
@@ -145,6 +145,7 @@ export function LuckLadder({ members }: { members: Member[] }) {
           {activeTrace && (
             <p className="ladder-winner">
               <strong>{players[activeIndex!].nickname}</strong>님의 결과: <b>{results[activeTrace.column]}</b>
+              {results[activeTrace.column] === "🎉 당첨" && <span> · 고구마 1박스</span>}
             </p>
           )}
         </div>
