@@ -86,6 +86,16 @@ export default function Home() {
                   <strong>ROCKY · 오전 6:47</strong>
                 </div>
               </div>
+              <div className="field-detail wide breakfast-detail">
+                <span>아침식사 일정</span>
+                <div className="breakfast-info">
+                  <span aria-hidden="true">🍚</span>
+                  <div>
+                    <strong>티오프 전 골프장 아침식사</strong>
+                    <p>골프장 클럽하우스에서 함께 식사합니다.</p>
+                  </div>
+                </div>
+              </div>
               <div className="field-detail wide">
                 <span>그린피 안내</span>
                 <div className="fee-breakdown">

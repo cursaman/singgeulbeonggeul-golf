@@ -63,6 +63,11 @@ h1 em { color: var(--green); font-style: normal; }
 .field-detail > strong { font-size: 20px; }
 .tee-times { display: flex; gap: 12px; flex-wrap: wrap; }
 .tee-times strong { padding: 10px 14px; color: var(--green-dark); background: white; border-radius: 10px; }
+.breakfast-detail { border-color: rgba(217,240,108,.25); }
+.breakfast-info { display: flex; align-items: center; gap: 14px; }
+.breakfast-info > span { display: grid; place-items: center; width: 46px; height: 46px; flex: 0 0 auto; background: rgba(255,255,255,.1); border-radius: 14px; font-size: 24px; }
+.breakfast-info strong { font-size: 17px; }
+.breakfast-info p { margin: 4px 0 0; color: #c9d7d0; font-size: 13px; }
 .fee-breakdown { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
 .fee-breakdown div { display: grid; gap: 5px; padding: 14px; background: rgba(255,255,255,.08); border-radius: 12px; }
 .fee-breakdown small { color: #aabeb3; font-weight: 800; }
