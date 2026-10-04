@@ -75,6 +75,8 @@ h1 em { color: var(--green); font-style: normal; }
 .fee-breakdown small { color: #aabeb3; font-weight: 800; }
 .fee-breakdown strong { font-size: 18px; }
 .payment-note { margin: 12px 0 0; color: #c9d7d0; font-size: 13px; }
+.payment-notes { display: flex; gap: 8px 18px; flex-wrap: wrap; }
+.important-note { color: var(--lime); font-weight: 800; }
 .prize-detail { border-color: rgba(217,240,108,.36); }
 .prize-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
 .prize-list > div { display: flex; align-items: center; gap: 12px; padding: 14px; color: var(--green-dark); background: var(--lime); border-radius: 12px; }

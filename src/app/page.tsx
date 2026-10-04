@@ -112,7 +112,10 @@ export default function Home() {
                   <div><small>선입금</small><strong>5,000원</strong></div>
                   <div><small>당일 결제</small><strong>106,000원</strong></div>
                 </div>
-                <p className="payment-note">당일 잔액은 카별로 결제됩니다.</p>
+                <div className="payment-notes">
+                  <p className="payment-note">당일 잔액은 카별로 결제됩니다.</p>
+                  <p className="payment-note important-note">카트비 및 캐디피는 별도로 지불합니다.</p>
+                </div>
               </div>
               <div className="field-detail wide prize-detail">
                 <span>대회 상품</span>
