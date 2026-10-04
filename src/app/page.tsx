@@ -56,6 +56,62 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="section field-section" id="field-meeting">
+          <div className="field-card">
+            <div className="field-card-heading">
+              <div>
+                <p className="eyebrow">FIELD MEETING</p>
+                <h2>골프존카운티 더골프</h2>
+                <p className="field-status"><span aria-hidden="true">✓</span> 예약 완료</p>
+              </div>
+              <div className="field-date">
+                <strong>10.06</strong>
+                <span>화요일</span>
+              </div>
+            </div>
+
+            <div className="field-details">
+              <div className="field-detail">
+                <span>예약자</span>
+                <strong>김태성</strong>
+              </div>
+              <div className="field-detail">
+                <span>예약 팀</span>
+                <strong>2팀</strong>
+              </div>
+              <div className="field-detail wide">
+                <span>코스 및 티타임</span>
+                <div className="tee-times">
+                  <strong>ROCKY · 오전 6:40</strong>
+                  <strong>ROCKY · 오전 6:47</strong>
+                </div>
+              </div>
+              <div className="field-detail wide">
+                <span>그린피 안내</span>
+                <div className="fee-breakdown">
+                  <div><small>총 그린피</small><strong>111,000원</strong></div>
+                  <div><small>선입금</small><strong>5,000원</strong></div>
+                  <div><small>당일 결제</small><strong>106,000원</strong></div>
+                </div>
+                <p className="payment-note">당일 잔액은 카별로 결제됩니다.</p>
+              </div>
+              <div className="field-detail wide prize-detail">
+                <span>대회 상품</span>
+                <div className="prize-list">
+                  <div><span aria-hidden="true">🎁</span><p>롯데상품권<strong>50,000원</strong></p></div>
+                  <div><span aria-hidden="true">💳</span><p>CJ 카드<strong>20,000원</strong></p></div>
+                  <div><span aria-hidden="true">🍠</span><p>고구마 1박스<strong>20,000원 상당</strong></p></div>
+                </div>
+              </div>
+            </div>
+
+            <div className="field-footer">
+              <p>라운드 전에 티타임을 다시 한번 확인해 주세요.</p>
+              <a className="button field-call" href="tel:0522400100">골프장 전화 052-240-0100</a>
+            </div>
+          </div>
+        </section>
+
         <section className="section soft" id="members">
           <div className="section-heading row-heading">
             <div><p className="eyebrow">OUR MEMBERS</p><h2>싱글벙글 회원</h2></div>
