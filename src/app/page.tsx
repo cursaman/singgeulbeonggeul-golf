@@ -102,6 +102,11 @@ export default function Home() {
                   <div><span aria-hidden="true">💳</span><p>CJ 카드<strong>20,000원</strong></p></div>
                   <div><span aria-hidden="true">🍠</span><p>고구마 1박스<strong>20,000원 상당</strong></p></div>
                 </div>
+                <div className="personal-gifts">
+                  <strong>참가자 개인 지급</strong>
+                  <span>3피스 골프공 1개</span>
+                  <span>포카리 2개</span>
+                </div>
               </div>
             </div>
 

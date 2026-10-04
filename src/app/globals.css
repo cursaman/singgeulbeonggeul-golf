@@ -75,6 +75,9 @@ h1 em { color: var(--green); font-style: normal; }
 .prize-list p, .prize-list strong { margin: 0; }
 .prize-list p { display: grid; gap: 2px; font-size: 13px; font-weight: 750; }
 .prize-list strong { font-size: 16px; }
+.personal-gifts { display: flex; align-items: center; gap: 9px; flex-wrap: wrap; margin-top: 12px; padding-top: 14px; border-top: 1px solid rgba(255,255,255,.14); }
+.personal-gifts strong { margin-right: 4px; color: var(--lime); font-size: 13px; }
+.personal-gifts span { padding: 7px 11px; color: var(--green-dark); background: white; border-radius: 999px; font-size: 12px; font-weight: 800; }
 .field-footer { display: flex; align-items: center; justify-content: space-between; gap: 20px; margin-top: 24px; }
 .field-footer p { margin: 0; color: #c9d7d0; }
 .field-call { flex-shrink: 0; color: var(--green-dark); background: var(--lime); }
