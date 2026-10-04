@@ -63,6 +63,10 @@ h1 em { color: var(--green); font-style: normal; }
 .field-detail > strong { font-size: 20px; }
 .tee-times { display: flex; gap: 12px; flex-wrap: wrap; }
 .tee-times strong { padding: 10px 14px; color: var(--green-dark); background: white; border-radius: 10px; }
+.preparation-detail { border-color: rgba(217,240,108,.25); }
+.preparation-list { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin: 0; padding: 0; list-style: none; }
+.preparation-list li { padding: 11px 12px; color: #eef6f1; background: rgba(255,255,255,.08); border-radius: 10px; font-size: 13px; font-weight: 800; text-align: center; }
+.preparation-list li::before { content: "✓ "; color: var(--lime); }
 .breakfast-detail { border-color: rgba(217,240,108,.25); }
 .meal-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
 .breakfast-info { display: flex; align-items: center; gap: 14px; }
@@ -156,6 +160,7 @@ footer { display: flex; justify-content: space-between; gap: 20px; padding: 32px
   .field-details { grid-template-columns: 1fr; }
   .field-detail.wide { grid-column: auto; }
   .tee-times { flex-direction: column; }
+  .preparation-list { grid-template-columns: repeat(2, 1fr); }
   .meal-list { grid-template-columns: 1fr; }
   .lunch-info { padding: 14px 0 0; border-top: 1px solid rgba(255,255,255,.14); border-left: 0; }
   .fee-breakdown { grid-template-columns: 1fr; }

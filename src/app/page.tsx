@@ -88,6 +88,15 @@ export default function Home() {
                   <strong>ROCKY · 오전 6:47</strong>
                 </div>
               </div>
+              <div className="field-detail wide preparation-detail">
+                <span>필드 가기 전 준비사항</span>
+                <ul className="preparation-list">
+                  <li>골프채 · 장갑 · 골프화</li>
+                  <li>골프공 · 티 · 볼마커</li>
+                  <li>신분증 · 결제수단</li>
+                  <li>티오프 30분 전 도착</li>
+                </ul>
+              </div>
               <div className="field-detail wide breakfast-detail">
                 <span>식사 안내</span>
                 <div className="meal-list">
