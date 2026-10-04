@@ -100,6 +100,27 @@ h1 em { color: var(--green); font-style: normal; }
 .member small { color: var(--muted); }
 .role { display: inline-block; margin-left: 7px; padding: 4px 8px; color: var(--green); background: #eaf5ee; border-radius: 7px; font-size: 11px; font-weight: 900; }
 .phone { color: var(--green-dark); font-size: 14px; font-weight: 750; }
+.ladder-section { padding-bottom: 20px; }
+.ladder-panel { padding: clamp(22px, 4vw, 36px); background: white; border: 1px solid var(--line); border-radius: 28px; }
+.ladder-picker { display: flex; gap: 8px; flex-wrap: wrap; }
+.ladder-member { display: inline-flex; grid-template-columns: none; align-items: center; gap: 7px; padding: 10px 13px; color: var(--muted); background: #f2f4ef; border: 1px solid transparent; border-radius: 999px; cursor: pointer; }
+.ladder-member.selected { color: var(--green-dark); background: var(--lime); border-color: #c7dc61; }
+.ladder-member input { width: 15px; min-height: 15px; margin: 0; accent-color: var(--green); }
+.ladder-actions { display: flex; align-items: center; gap: 10px; margin-top: 22px; }
+.ladder-actions > span { margin-left: auto; color: var(--muted); font-size: 13px; font-weight: 800; }
+.ladder-reset { background: #eef1eb; color: var(--ink); }
+.ladder-message { margin: 14px 0 0; color: var(--green); font-size: 13px; font-weight: 800; }
+.ladder-stage { margin-top: 28px; padding: 18px; overflow-x: auto; background: #f7f8f4; border-radius: 20px; }
+.ladder-player-buttons, .ladder-results { display: grid; min-width: 650px; gap: 6px; }
+.ladder-player-buttons button { overflow: hidden; padding: 9px 4px; color: var(--green-dark); background: white; border: 1px solid var(--line); border-radius: 9px; font-weight: 850; text-overflow: ellipsis; white-space: nowrap; cursor: pointer; }
+.ladder-player-buttons button.active { color: white; background: var(--green); border-color: var(--green); }
+.ladder-svg { display: block; min-width: 650px; width: 100%; height: auto; }
+.ladder-line { stroke: #aebbb3; stroke-width: 5; stroke-linecap: round; }
+.ladder-path { fill: none; stroke: #e55f3c; stroke-width: 10; stroke-linecap: round; stroke-linejoin: round; }
+.ladder-results span { display: grid; place-items: center; min-height: 44px; padding: 6px; color: var(--muted); background: white; border-radius: 9px; font-size: 12px; font-weight: 850; text-align: center; }
+.ladder-results span.revealed { color: var(--green-dark); background: var(--lime); }
+.ladder-winner { margin: 18px 0 0; color: var(--green-dark); font-size: 18px; text-align: center; }
+.ladder-winner b { color: #c34728; }
 .forms-section { display: grid; grid-template-columns: minmax(0, 620px); justify-content: center; }
 .form-card { padding: clamp(26px, 5vw, 46px); background: white; border: 1px solid var(--line); border-radius: 28px; }
 form { display: grid; gap: 18px; }
@@ -132,5 +153,8 @@ footer { display: flex; justify-content: space-between; gap: 20px; padding: 32px
   .schedule-grid, .forms-section, .member-list { grid-template-columns: 1fr; }
   .schedule-card .day { margin-bottom: 18px; }
   .member { grid-template-columns: 1fr; gap: 12px; }
+  .ladder-actions { align-items: stretch; flex-wrap: wrap; }
+  .ladder-actions .button { flex: 1; }
+  .ladder-actions > span { width: 100%; margin-left: 0; text-align: right; }
   footer { flex-direction: column; }
 }

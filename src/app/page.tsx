@@ -1,5 +1,6 @@
 import { CurrentDateTime } from "@/components/current-date-time";
 import { JoinForm } from "@/components/join-form";
+import { LuckLadder } from "@/components/luck-ladder";
 import { members } from "@/data/members";
 
 const schedules = [
@@ -20,6 +21,7 @@ export default function Home() {
         <nav aria-label="주요 메뉴">
           <a href="#schedule">정기모임</a>
           <a href="#members">회원</a>
+          <a href="#ladder">행운상</a>
           <a className="nav-cta" href="#join">가입하기</a>
         </nav>
       </header>
@@ -155,6 +157,15 @@ export default function Home() {
               </article>
             ))}
           </div>
+        </section>
+
+        <section className="section ladder-section" id="ladder">
+          <div className="section-heading">
+            <p className="eyebrow">LUCKY DRAW</p>
+            <h2>행운상 사다리</h2>
+            <p>참가 회원을 최대 8명까지 선택하고 고구마 1박스의 주인공을 뽑아보세요.</p>
+          </div>
+          <LuckLadder members={members} />
         </section>
 
         <section className="section forms-section">
