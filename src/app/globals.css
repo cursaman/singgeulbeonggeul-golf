@@ -69,6 +69,7 @@ h1 em { color: var(--green); font-style: normal; }
 .breakfast-info > span { display: grid; place-items: center; width: 46px; height: 46px; flex: 0 0 auto; background: rgba(255,255,255,.1); border-radius: 14px; font-size: 24px; }
 .breakfast-info strong { font-size: 17px; }
 .breakfast-info p { margin: 4px 0 0; color: #c9d7d0; font-size: 13px; }
+.breakfast-info .reservation-needed { color: var(--lime); font-weight: 800; }
 .lunch-info { padding-left: 16px; border-left: 1px solid rgba(255,255,255,.14); }
 .fee-breakdown { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
 .fee-breakdown div { display: grid; gap: 5px; padding: 14px; background: rgba(255,255,255,.08); border-radius: 12px; }

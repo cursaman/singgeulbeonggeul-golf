@@ -101,8 +101,9 @@ export default function Home() {
                   <div className="breakfast-info lunch-info">
                     <span aria-hidden="true">🍽️</span>
                     <div>
-                      <strong>점심식사</strong>
-                      <p>점심 회비 20,000원이 필요합니다.</p>
+                      <strong>점심식사 · 서생집 울산본점</strong>
+                      <p>라운드 후 8명 · 오리불고기 중심 · 1인 회비 20,000원</p>
+                      <p className="reservation-needed">예약 문의 필요 · 울주군 서생면 용연길 148</p>
                     </div>
                   </div>
                 </div>
