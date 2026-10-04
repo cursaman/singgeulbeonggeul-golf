@@ -18,6 +18,6 @@ export const members: Member[] = [
   { name: "문병식", nickname: "레인제로", gender: "남", phone: "010-8712-7102" },
   { name: "미입력", nickname: "해피나이스", gender: "여", phone: "010-9014-3966" },
   { name: "박현주", nickname: "다온", gender: "여", phone: "010-9291-3190" },
-  { name: "김진철", nickname: "제로카73", gender: "미입력", phone: "010-6773-3787" },
-  { name: "미입력", nickname: "서프로", gender: "미입력", phone: "010-3876-1711" }
+  { name: "김진철", nickname: "제로카73", gender: "남", phone: "010-6773-3787" },
+  { name: "미입력", nickname: "서프로", gender: "남", phone: "010-3876-1711" }
 ];
