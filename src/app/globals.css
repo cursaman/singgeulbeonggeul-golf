@@ -71,6 +71,12 @@ h1 em { color: var(--green); font-style: normal; }
 .breakfast-info p { margin: 4px 0 0; color: #c9d7d0; font-size: 13px; }
 .breakfast-info .reservation-needed { color: var(--lime); font-weight: 800; }
 .lunch-info { padding-left: 16px; border-left: 1px solid rgba(255,255,255,.14); }
+.restaurant-phone { display: inline-flex; margin-top: 10px; padding: 8px 11px; color: #10241a; background: var(--lime); border-radius: 9px; font-size: 14px; font-weight: 900; text-decoration: none; }
+.restaurant-phone:hover { filter: brightness(1.08); }
+.restaurant-menu { display: grid; gap: 6px; margin-top: 12px; }
+.restaurant-menu span { display: flex; justify-content: space-between; gap: 18px; color: #dce8e1; font-size: 13px; }
+.restaurant-menu strong { color: white; font-size: 13px; white-space: nowrap; }
+.breakfast-info .lunch-budget { margin-top: 10px; color: #fff; font-weight: 800; }
 .fee-breakdown { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
 .fee-breakdown div { display: grid; gap: 5px; padding: 14px; background: rgba(255,255,255,.08); border-radius: 12px; }
 .fee-breakdown small { color: #aabeb3; font-weight: 800; }

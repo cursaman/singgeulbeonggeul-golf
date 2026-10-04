@@ -104,6 +104,16 @@ export default function Home() {
                       <strong>점심식사 · 서생집 울산본점</strong>
                       <p>라운드 후 8명 · 오리불고기 중심 · 1인 회비 20,000원</p>
                       <p className="reservation-needed">예약 문의 필요 · 울주군 서생면 용연길 148</p>
+                      <a className="restaurant-phone" href="tel:0507-1498-3090">
+                        ☎ 0507-1498-3090
+                      </a>
+                      <div className="restaurant-menu" aria-label="서생집 대표 메뉴 가격">
+                        <span>오리야채불고기 중 <strong>35,000원</strong></span>
+                        <span>오리야채불고기 대 <strong>55,000원</strong></span>
+                        <span>생오리 소금·양념구이 <strong>55,000원</strong></span>
+                        <span>소고기국밥 <strong>8,000원</strong></span>
+                      </div>
+                      <p className="lunch-budget">8명 예산 160,000원 · 대 2개 110,000원 + 추가 메뉴</p>
                     </div>
                   </div>
                 </div>
