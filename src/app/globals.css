@@ -64,10 +64,12 @@ h1 em { color: var(--green); font-style: normal; }
 .tee-times { display: flex; gap: 12px; flex-wrap: wrap; }
 .tee-times strong { padding: 10px 14px; color: var(--green-dark); background: white; border-radius: 10px; }
 .breakfast-detail { border-color: rgba(217,240,108,.25); }
+.meal-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
 .breakfast-info { display: flex; align-items: center; gap: 14px; }
 .breakfast-info > span { display: grid; place-items: center; width: 46px; height: 46px; flex: 0 0 auto; background: rgba(255,255,255,.1); border-radius: 14px; font-size: 24px; }
 .breakfast-info strong { font-size: 17px; }
 .breakfast-info p { margin: 4px 0 0; color: #c9d7d0; font-size: 13px; }
+.lunch-info { padding-left: 16px; border-left: 1px solid rgba(255,255,255,.14); }
 .fee-breakdown { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
 .fee-breakdown div { display: grid; gap: 5px; padding: 14px; background: rgba(255,255,255,.08); border-radius: 12px; }
 .fee-breakdown small { color: #aabeb3; font-weight: 800; }
@@ -121,6 +123,8 @@ footer { display: flex; justify-content: space-between; gap: 20px; padding: 32px
   .field-details { grid-template-columns: 1fr; }
   .field-detail.wide { grid-column: auto; }
   .tee-times { flex-direction: column; }
+  .meal-list { grid-template-columns: 1fr; }
+  .lunch-info { padding: 14px 0 0; border-top: 1px solid rgba(255,255,255,.14); border-left: 0; }
   .fee-breakdown { grid-template-columns: 1fr; }
   .prize-list { grid-template-columns: 1fr; }
   .schedule-grid, .forms-section, .member-list { grid-template-columns: 1fr; }

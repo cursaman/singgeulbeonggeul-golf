@@ -87,12 +87,21 @@ export default function Home() {
                 </div>
               </div>
               <div className="field-detail wide breakfast-detail">
-                <span>아침식사 일정</span>
-                <div className="breakfast-info">
-                  <span aria-hidden="true">🍚</span>
-                  <div>
-                    <strong>티오프 전 골프장 아침식사</strong>
-                    <p>골프장 클럽하우스에서 함께 식사합니다.</p>
+                <span>식사 안내</span>
+                <div className="meal-list">
+                  <div className="breakfast-info">
+                    <span aria-hidden="true">☀️</span>
+                    <div>
+                      <strong>아침식사</strong>
+                      <p>각자 식사를 마치고 골프장으로 와주세요.</p>
+                    </div>
+                  </div>
+                  <div className="breakfast-info lunch-info">
+                    <span aria-hidden="true">🍽️</span>
+                    <div>
+                      <strong>점심식사</strong>
+                      <p>점심 회비 20,000원이 필요합니다.</p>
+                    </div>
                   </div>
                 </div>
               </div>
